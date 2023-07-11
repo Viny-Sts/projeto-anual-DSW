@@ -1,0 +1,8 @@
+.games {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game {
+    margin-bottom: 3%;
+}

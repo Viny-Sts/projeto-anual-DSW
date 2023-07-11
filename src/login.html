@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Neptunia GS</title>
+    <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="js/script.js"></script>
 </head>
 <body class="container-fluid text-bg-dark">
 <div class="bg-image"
-     style="background-image: url('adm.png');
+     style="background-image: url('img/adm.png');
             height: 100vh">
 <nav class="navbar navbar-expand-lg navbar-light bg-black p-3">
     <a class="navbar-brand text-white" href="index.html">Neptunia GS</a>
@@ -27,23 +28,26 @@
     </div>
 </nav>
 <div class="container">
-    <div class="row mt-3">
-        <div class="text-justify">
-            <h1 class="text-center mb-5">
-                WELCOME TO NEPTUNIA GAME SOURCE
-            </h1>
-        </div>
-        <div class="text-center">
-            <p>
-                Here, you’ll take a simple 10-question quiz to determine what video game best defines you and if should start playing such game.
+    <div class="row">
+        <form class="mt-3 text-center">
+            <h1 class="mt-5 mb-3">SIGN IN</h1>
+            <div class="mb-3">
+                <label class="form-label" for="email">USERNAME OR EMAIL</label> <br>
+                <input class="form-control-sm" id="email" type="email" placeholder="Insert here.">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">PASSWORD</label> <br>
+                <input class="form-control-sm" id="password" type="password" placeholder="Insert here.">
+            </div>
+            <button class="btn btn-success" onclick="validarLogin()" type="button" id="submit-button">NEXT</button>
 
-                Here’s how it’ll work: we’ll ask 10 questions about some preferences regarding games, availability, hobbies, dreams, maturity, and some opinions about gaming in general,
-
-                after that, you’ll be taken into a page filled with 9 games that best define you based and the quiz’s result.
+            <p class="form-text-white mt-2">
+                OR <br>
+                <button class="btn btn-secondary mt-2" onclick="location.href='signup.html'" type="button">SIGN UP</button>
             </p>
-        </div>
+        </form>
     </div>
-</div>
+    </div>
 </div>
 </body>
 </html>
